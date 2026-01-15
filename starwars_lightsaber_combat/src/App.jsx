@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -9,25 +7,42 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h1>Star Wars Lightsaber Combat</h1>
+        <p>Explore various lightsaber combat styles used by Jedi and Sith throughout the Star Wars universe.</p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      <div className="combat-styles">
+        <div className="style-card">
+          <h2>Form I: Shii-Cho</h2>
+          <p>The most basic form, focusing on wide, sweeping strikes and defense against multiple opponents.</p>
+        </div>
+        <div className="style-card">
+          <h2>Form II: Makashi</h2>
+          <p>A refined style emphasizing precision and elegance, ideal for one-on-one duels.</p>
+        </div>
+        <div className="style-card">
+          <h2>Form III: Soresu</h2>
+          <p>A defensive style that prioritizes tight blade work and energy conservation.</p>
+        </div>
+        <div className="style-card">
+          <h2>Form IV: Ataru</h2>
+          <p>An acrobatic style that incorporates flips, spins, and aggressive attacks.</p>
+        </div>
+        <div className="style-card">
+          <h2>Form V: Shien/Djem So</h2>
+          <p>A powerful style focusing on strong counterattacks and leveraging an opponent's strength against them.</p>
+        </div>
+        <div className="style-card">
+          <h2>Form VI: Niman</h2>
+          <p>A balanced style that combines elements from previous forms, often used by diplomats.</p>
+        </div>
+        <div className="style-card">
+          <h2>Form VII: Juyo/Vaapad</h2>
+          <p>An aggressive and unpredictable style that channels intense emotions into combat.</p>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      
+
     </>
   )
 }
